@@ -1,0 +1,81 @@
+.divider-container {
+  width: 100%;
+}
+
+.line {
+  flex: 1;
+  color: #131D26;
+}
+
+p {
+  font-weight: bold;
+  text-align: center;
+}
+
+.avatar {
+  border-radius: 15px;
+  margin-left: 50%;
+  transform: translateX(-50%);
+}
+
+h2 {
+  font-family: 'Montserrat' !important;
+  color: #131D26;
+  font-size: 40px;
+  font-weight: 900;
+}
+
+input {
+  font-family: 'Montserrat' !important;
+  color: #131D26;
+}
+
+button {
+  font-family: 'Montserrat' !important;
+  border-radius: 100px !important;
+  width: 70px !important;
+  height: 70px !important;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  color: azure;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  background-color: #303D87;
+}
+
+.text {
+  padding-left: 10px;
+  padding-right: 10px;
+  color: #131D26;
+}
+
+.card {
+  margin: 3% 30%;
+  border-radius: 30px;
+  padding: 3% 4%;
+  opacity: 70%;
+  background-color: azure;
+  box-shadow: 0 0 1em rgba(128, 128, 128, 0.781);
+}
+
+.redirect {
+  color: #5766bd;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+@media (max-width: 600px) {
+  .sign-in-section {
+    margin: 5%;
+    width: 300px;
+  }
+}
+
+span {
+  font-family: 'Montserrat' !important;
+}
+
+app-user-posts {
+  font-family: 'Montserrat' !important;
+  text-align: center;
+}

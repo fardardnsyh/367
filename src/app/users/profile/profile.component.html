@@ -1,0 +1,29 @@
+<app-loader *ngIf="!(user$ | async)"></app-loader>
+
+<ng-container *ngIf="(user$ | async) as user">
+  <div class="wrapper">
+    <div class="card">
+      <div class="card-info">
+        <div class="img-section">
+          <img class="avatar" src="{{ user.avatar }}" />
+        </div><br>
+        <div class="info-section">
+          <p class="label">Name: <span>{{ user.name }}</span></p>
+          <p class="label">Email: <span>{{ user.email }}</span></p><br>
+          <div class="action">
+            <button mat-flat-button color="primary" (click)="resetPassword()">
+              Reset password
+            </button><div> </div><br>
+            <button
+              mat-raised-button
+              color="warn"
+              (click)="deleteAccount(user.id)"
+            >Delete account
+            </button>
+          </div>
+        </div><br>
+        <app-user-posts [posts]="user.posts"></app-user-posts>
+      </div>
+    </div>
+  </div>
+</ng-container>
